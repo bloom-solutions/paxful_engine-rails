@@ -9,15 +9,15 @@ Gem::Specification.new do |spec|
   spec.version     = PaxfulRails::VERSION
   spec.authors     = ["Mark Chavez"]
   spec.email       = ["mjfchavez@gmail.com"]
-  spec.homepage    = "TODO"
-  spec.summary     = "TODO: Summary of PaxfulRails."
-  spec.description = "TODO: Description of PaxfulRails."
+  spec.homepage    = "https://github.com/bloom-solutions"
+  spec.summary     = "https://github.com/bloom-solutions"
+  spec.description = "https://github.com/bloom-solutions"
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata["allowed_push_host"] = "https://rubygems.org"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
