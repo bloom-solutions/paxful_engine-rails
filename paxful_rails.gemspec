@@ -28,7 +28,12 @@ Gem::Specification.new do |spec|
   spec.add_dependency "gem_config", "~> 0.3.0"
   spec.add_dependency "paxful_client", "~> 0.3.0"
   spec.add_dependency "rails", "~> 5.2"
+  spec.add_dependency "sidekiq"
 
+  spec.add_development_dependency "dotenv", "~> 2.5"
+  spec.add_development_dependency "pry"
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "sqlite3"
+  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "webmock"
 end

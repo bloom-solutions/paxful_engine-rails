@@ -1,5 +1,6 @@
 require "gem_config"
 require "paxful_client"
+require "sidekiq"
 
 require "paxful_rails/engine"
 
