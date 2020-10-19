@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.version     = PaxfulRails::VERSION
   spec.authors     = ["Mark Chavez"]
   spec.email       = ["mjfchavez@gmail.com"]
-  spec.homepage    = "https://github.com/bloom-solutions"
-  spec.summary     = "https://github.com/bloom-solutions"
-  spec.description = "https://github.com/bloom-solutions"
+  spec.homepage    = "https://github.com/bloom-solutions/paxful_rails"
+  spec.summary     = "Mountable engine that fetches completed paxful trades."
+  spec.description = "Mountable engine that fetches completed paxful trades."
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
