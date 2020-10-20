@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_10_18_043517) do
 
-  create_table "paxful_rails_trades", force: :cascade do |t|
+  create_table "paxful_engine_trades", force: :cascade do |t|
     t.string "trade_hash", null: false
     t.string "offer_hash", null: false
     t.string "offer_type", null: false
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2020_10_18_043517) do
     t.string "payment_method_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["trade_hash"], name: "index_paxful_rails_trades_on_trade_hash", unique: true
+    t.index ["trade_hash"], name: "index_paxful_engine_trades_on_trade_hash", unique: true
   end
 
 end

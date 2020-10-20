@@ -1,4 +1,4 @@
-# PaxfulRails
+# PaxfulEngine
 
 A mountable Rails engine that saves completed trades from [paxful](https://paxful.com/)
 marketplace and lets you do anything with it.
@@ -8,20 +8,20 @@ marketplace and lets you do anything with it.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'paxful_rails'
+gem 'paxful_engine-rails'
 ```
 
 And then execute:
 
 ```bash
 $ bundle
-$ rails paxful_rails:install:migrations
+$ rails paxful_engine:install:migrations
 $ rails db:migrate
 ```
 
 Or install it yourself as:
 ```bash
-$ gem install paxful_rails
+$ gem install paxful_engine-rails
 ```
 
 ### Configuration
@@ -29,9 +29,9 @@ $ gem install paxful_rails
 Create an initializer in your Rails application:
 
 ```
-# config/initializers/paxful_rails.rb
+# config/initializers/paxful_engine-rails.rb
 
-PaxfulRails.configure do |c|
+PaxfulEngine.configure do |c|
   c.paxful_key = "your paxful key"
   c.paxful_secret = "your paxful secret"
   c.on_sync_callback = "YourCallback"

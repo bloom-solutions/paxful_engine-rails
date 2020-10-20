@@ -8,7 +8,7 @@ require "rspec/rails"
 require "dotenv"
 Dotenv.load(".env.local", ".env")
 
-Dir[PaxfulRails::Engine.root.join("spec/support/**/*.rb")].each do |f|
+Dir[PaxfulEngine::Engine.root.join("spec/support/**/*.rb")].each do |f|
   require f
 end
 

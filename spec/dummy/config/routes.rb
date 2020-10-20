@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount PaxfulRails::Engine => "/paxful_rails"
+  mount PaxfulEngine::Engine => "/paxful_engine"
 end

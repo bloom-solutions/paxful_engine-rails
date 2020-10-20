@@ -6,3 +6,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.1.0]
 - Initial commit
+- Rename gem from `paxful_rails` to `paxful_engine-rails`

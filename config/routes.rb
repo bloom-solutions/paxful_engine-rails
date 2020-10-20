@@ -1,2 +1,2 @@
-PaxfulRails::Engine.routes.draw do
+PaxfulEngine::Engine.routes.draw do
 end

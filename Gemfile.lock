@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    paxful_rails (0.1.0)
+    paxful_engine-rails (0.1.0)
       gem_config (~> 0.3.0)
       paxful_client (~> 0.3.0)
       rails (~> 5.2)
@@ -192,7 +192,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv (~> 2.5)
-  paxful_rails!
+  paxful_engine-rails!
   pry
   rspec-rails
   sqlite3
