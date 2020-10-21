@@ -54,6 +54,17 @@ class YourCallback
 end
 ```
 
+### Usage
+
+Add this to your scheduler somewhere:
+
+```
+# sidekiq_cron.yml
+refresh_paxful_order_book:
+  cron: "*/2 * * * * Asia/Singapore" # runs every 2 minutes
+  class: "PaxfulEngine::SyncOrderBookJob"
+```
+
 ### Development
 
 ```
