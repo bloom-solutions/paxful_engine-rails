@@ -57,13 +57,16 @@ end
 ### Usage
 
 Add this to your scheduler somewhere:
-
 ```
 # sidekiq_cron.yml
 refresh_paxful_order_book:
   cron: "*/2 * * * * Asia/Singapore" # runs every 2 minutes
   class: "PaxfulEngine::SyncOrderBookJob"
 ```
+
+From the host app:
+- Check list of trades at `/paxful_engine/trades`.
+- Details per trade at `/paxful_engine/trades/:id`.
 
 ### Development
 
