@@ -1,0 +1,43 @@
+<%= link_to "Back", paxful_engine.trades_path, class: "btn btn-primary" %>
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card mt-4">
+      <h5 class="card-header">Trade details (<%= @trade.trade_hash %>)</h5>
+      <div class="card-body">
+        <div>
+          <div> <strong>Seller:</strong> <%= @trade.seller %> </div>
+          <div> <strong>Buyer:</strong> <%= @trade.buyer %> </div>
+          <div> <strong>Type:</strong> <%= @trade.offer_type.upcase %> </div>
+        </div>
+
+        <hr />
+
+        <div>
+          <div> 
+            <strong>Fiat Requested:</strong> 
+            <%= number_to_currency(@trade.fiat_amount_requested, unit: "#{@trade.fiat_currency_code} ") %> 
+          </div>
+          <div> 
+            <strong>Crypto Requested:</strong> 
+            <%= number_to_currency(@trade.crypto_amount_requested, unit: "#{@trade.crypto_currency_code} ") %> 
+            (in sats)
+          </div>
+        </div>
+
+        <hr />
+
+        <div>
+          <div> <strong>Started at:</strong> <%= @trade.started_at.strftime("%m/%d/%Y %I:%M%p") %> </div>
+          <div> <strong>Ended at:</strong> <%= @trade.ended_at.strftime("%m/%d/%Y %I:%M%p") %> </div>
+          <div> <strong>Completed at:</strong> <%= @trade.completed_at&.strftime("%m/%d/%Y %I:%M%p") %> </div>
+        </div>
+      
+        <hr />
+
+        <div> <strong>Status:</strong> <%= @trade.status.upcase %> </div>
+        <div> <strong>Payment Method:</strong> <%= @trade.payment_method_name %> </div>
+      </div>
+    </div>
+  </div>
+</div>

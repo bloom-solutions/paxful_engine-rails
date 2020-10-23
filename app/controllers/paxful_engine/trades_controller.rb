@@ -5,5 +5,9 @@ module PaxfulEngine
       @trades = Trade.all
     end
 
+    def show
+      @trade = Trade.find(params[:id])
+    end
+
   end
 end
