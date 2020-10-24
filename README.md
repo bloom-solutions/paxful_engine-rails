@@ -34,7 +34,8 @@ Create an initializer in your Rails application:
 PaxfulEngine.configure do |c|
   c.paxful_key = "your paxful key"
   c.paxful_secret = "your paxful secret"
-  c.on_sync_callback = "YourCallback"
+  c.on_sync_callback = "SyncCallback"
+  c.on_failure_callback = "FailureCallback"
 end
 ```
 
@@ -45,10 +46,29 @@ It accepts a `Trade` as its only argument.
 
 ```
 # example
-class YourCallback
+class SyncCallback
 
   def self.call(trade)
     # do anything you want with this record
+  end
+
+end
+```
+
+#### c.on_failure_callback
+
+An object that responds to `call` that gets executed when a trade cannot be created.
+
+It accepts two arguments:
+- exception
+- payload
+
+```
+# example
+class FailureCallback
+
+  def self.call(e, payload)
+    # log somewhere...
   end
 
 end

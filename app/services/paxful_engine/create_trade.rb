@@ -24,6 +24,12 @@ module PaxfulEngine
       end
 
       trade
+
+    rescue => exception
+      if PaxfulEngine.configuration.on_failure_callback.present?
+        callback = PaxfulEngine.configuration.on_failure_callback
+        callback.constantize.(exception, payload)
+      end
     end
 
   end

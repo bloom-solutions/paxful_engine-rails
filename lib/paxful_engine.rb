@@ -12,6 +12,7 @@ module PaxfulEngine
     has :paxful_key, classes: [NilClass, String]
     has :paxful_secret, classes: [NilClass, String]
     has :on_sync_callback
+    has :on_failure_callback
   end
 
 end
