@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - Highlight status of trade (green if successful; red otherwise)
+- Add message if no trades were found
 
 ## [0.2.0]
 ### Added
