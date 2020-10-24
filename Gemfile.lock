@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    paxful_engine-rails (0.2.0)
+    paxful_engine-rails (0.3.0)
       gem_config (~> 0.3.0)
       paxful_client (~> 0.3.0)
       rails (~> 5.2)
