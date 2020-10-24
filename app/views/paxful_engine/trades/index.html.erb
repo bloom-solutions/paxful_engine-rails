@@ -17,7 +17,9 @@
           <td> <%= trade.created_at.strftime("%m/%d/%Y %I:%M%p") %> </td>
           <td> <%= trade.trade_hash %> </td>
           <td> <%= trade.offer_type.upcase %> </td>
-          <td> <%= trade.status.upcase %> </td>
+          <td> 
+            <span class="<%= highlight_status(trade) %>"> <%= trade.status.upcase %> </span> 
+          </td>
           <td> <%= trade.seller %> </td>
           <td> <%= trade.buyer %> </td>
           <td> <%= link_to "Check trade details", paxful_engine.trade_path(trade) %> </td>

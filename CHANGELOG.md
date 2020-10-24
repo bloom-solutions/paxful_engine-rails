@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Added
+- Highlight status of trade (green if successful; red otherwise)
+
 ## [0.2.0]
 ### Added
 - Add route to show list of trades `/trades`
