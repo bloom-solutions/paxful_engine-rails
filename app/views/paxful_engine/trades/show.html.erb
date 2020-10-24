@@ -35,7 +35,10 @@
       
         <hr />
 
-        <div> <strong>Status:</strong> <%= @trade.status.upcase %> </div>
+        <div> 
+          <strong>Status:</strong> 
+          <span class="<%= highlight_status(@trade) %>"> <%= @trade.status.upcase %> </span> 
+        </div>
         <div> <strong>Payment Method:</strong> <%= @trade.payment_method_name %> </div>
       </div>
     </div>
