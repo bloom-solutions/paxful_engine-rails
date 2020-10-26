@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "gem_config", "~> 0.3.0"
   spec.add_dependency "paxful_client", "~> 0.3.0"
-  spec.add_dependency "rails", "~> 5.2"
+  spec.add_dependency "rails", "~> 6.0.2", ">= 6.0.2.2"
   spec.add_dependency "sidekiq"
 
   spec.add_development_dependency "dotenv", "~> 2.5"
