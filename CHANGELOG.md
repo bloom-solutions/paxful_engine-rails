@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Added
+- Add `on_failure_callback` that runs when a trade cannot be created
+
 ## [0.3.1]
 ### Fixed
 - Apply status highlight in `trades#show`
