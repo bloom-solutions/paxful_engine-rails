@@ -4,6 +4,7 @@ require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 require "vcr"
 require "pry"
 require "rspec/rails"
+require "factory_bot"
 
 require "dotenv"
 Dotenv.load(".env.local", ".env")

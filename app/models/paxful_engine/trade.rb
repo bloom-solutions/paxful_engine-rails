@@ -17,5 +17,17 @@ module PaxfulEngine
       presence: true
     )
 
+    def successful?
+      status.downcase == "successful"
+    end
+
+    def buy?
+      offer_type.downcase == "buy"
+    end
+
+    def sell?
+      offer_type.downcase == "sell"
+    end
+
   end
 end
