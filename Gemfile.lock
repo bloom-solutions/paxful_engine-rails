@@ -80,6 +80,9 @@ GEM
       ffi (>= 1.3.0)
     factory_bot (6.1.0)
       activesupport (>= 5.0.0)
+    factory_bot_rails (6.1.0)
+      factory_bot (~> 6.1.0)
+      railties (>= 5.0.0)
     ffi (1.13.1)
     gem_config (0.3.2)
     globalid (0.4.2)
@@ -194,7 +197,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv (~> 2.5)
-  factory_bot
+  factory_bot_rails
   paxful_engine-rails!
   pry
   rspec-rails

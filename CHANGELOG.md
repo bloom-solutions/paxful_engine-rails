@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Changed
+- Use `factory_bot_rails`
+- Allow host app to use defined factory
+
 ## [0.5.0]
 ### Added
 - Install factory_bot

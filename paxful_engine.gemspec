@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sidekiq"
 
   spec.add_development_dependency "dotenv", "~> 2.5"
-  spec.add_development_dependency "factory_bot"
+  spec.add_development_dependency "factory_bot_rails"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rspec-rails"
   spec.add_development_dependency "sqlite3"
