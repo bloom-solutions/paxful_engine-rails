@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Added
+- Show `completed_at` date of a paxful trade
+- Sort by both `completed_at` and `created_at`
+
 ## [0.6.0]
 ### Changed
 - Use `factory_bot_rails`

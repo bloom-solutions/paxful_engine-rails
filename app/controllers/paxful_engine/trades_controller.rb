@@ -2,7 +2,7 @@ module PaxfulEngine
   class TradesController < ApplicationController
 
     def index
-      @trades = Trade.all
+      @trades = Trade.order("completed_at DESC, created_at DESC")
     end
 
     def show
