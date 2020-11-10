@@ -5,7 +5,7 @@ module PaxfulEngine
       @trades = Trade.order(completed_at: :desc, created_at: :desc)
 
       if params[:q] != "all"
-        @trades = @trades.where.not(completed_at: :nil)
+        @trades = @trades.where.not(completed_at: nil)
       end
     end
 
