@@ -1,4 +1,13 @@
-<span class="font-weight-bold"> Found <%= pluralize(@trades.count, "trade") %></span>
+<span class="font-weight-bold"> Found <%= pluralize(@trades.count, "trade") %>.</span>
+
+<div>
+  <% if params[:q] == "all" %>
+    <%= link_to "👀 Only show successful trades", trades_path %>
+  <% else %>
+    <%= link_to "👀 Include non-successful trades", trades_path(q: :all) %>
+  <% end %>
+</div>
+
 <hr />
 
 <div class="table-responsive">
