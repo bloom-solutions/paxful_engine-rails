@@ -43,5 +43,13 @@ module PaxfulEngine
       end
     end
 
+    describe "#base_crypto_requested" do
+      let(:paxful_engine_trade) { build(:paxful_engine_trade, crypto_amount_requested: 526_815) }
+
+      it "returns base crypto" do
+        expect(paxful_engine_trade.base_crypto_requested).to eq 0.00526815
+      end
+    end
+
   end
 end

@@ -29,5 +29,9 @@ module PaxfulEngine
       offer_type.downcase == "sell"
     end
 
+    def base_crypto_requested
+      BigDecimal(crypto_amount_requested) / 100_000_000
+    end
+
   end
 end

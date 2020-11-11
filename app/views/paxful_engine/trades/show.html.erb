@@ -20,8 +20,8 @@
           </div>
           <div> 
             <strong>Crypto Requested:</strong> 
-            <%= number_to_currency(@trade.crypto_amount_requested, unit: "#{@trade.crypto_currency_code} ") %> 
-            (in sats)
+            <%= @trade.crypto_currency_code %> <%= @trade.base_crypto_requested %> 
+            (<%= number_to_currency(@trade.crypto_amount_requested, unit: "") %> in sats)
           </div>
         </div>
 
