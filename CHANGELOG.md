@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.9.0]
 ### Changed
 - Added `fiat` and `crypto` amounts to index view
 - Removed `buyer` and `seller` from index view
