@@ -28,9 +28,18 @@
         <hr />
 
         <div>
-          <div> <strong>Started at:</strong> <%= @trade.started_at.strftime("%m/%d/%Y %I:%M%p") %> </div>
-          <div> <strong>Ended at:</strong> <%= @trade.ended_at.strftime("%m/%d/%Y %I:%M%p") %> </div>
-          <div> <strong>Completed at:</strong> <%= @trade.completed_at&.strftime("%m/%d/%Y %I:%M%p") %> </div>
+          <div> 
+            <strong>Started at:</strong> 
+            <%= format_datetime(@trade.started_at) %> 
+          </div>
+          <div> 
+            <strong>Ended at:</strong> 
+            <%= format_datetime(@trade.ended_at) %> 
+          </div>
+          <div> 
+            <strong>Completed at:</strong> 
+            <%= format_datetime(@trade.completed_at) %> 
+          </div>
         </div>
       
         <hr />

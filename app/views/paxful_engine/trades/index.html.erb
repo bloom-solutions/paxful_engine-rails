@@ -32,7 +32,7 @@
 
       <% @trades.each do |trade| %>
         <tr scope="row">
-          <td> <%= trade.completed_at&.strftime("%m/%d/%Y %I:%M%p") || "-" %> </td>
+          <td> <%= format_datetime(trade.completed_at) %> </td>
           <td> <%= trade.trade_hash %> </td>
           <td> <%= number_to_currency(trade.fiat_amount_requested, unit: "#{trade.fiat_currency_code} ") %> </td>
           <td> <%= trade.crypto_currency_code %> <%= trade.base_crypto_requested %> </td>
