@@ -91,8 +91,7 @@ From the host app:
 ### Development
 
 ```
-$ rails db:migrate
-$ rails db:migrate db:test:prepare
+$ rails db:create db:migrate db:test:prepare
 ```
 
 ### Testing
