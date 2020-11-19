@@ -91,9 +91,10 @@ From the host app:
 ### Development
 
 ```
-$ rails db:migrate
-$ rails db:migrate db:test:prepare
+$ rails db:create db:migrate db:test:prepare
 ```
+
+If you need to re-record cassettes, `cp .env{,.local}` and edit the values.
 
 ### Testing
 
