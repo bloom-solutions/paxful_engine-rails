@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Changed
+- Fetch completed trades until the last trade it gets is a fresh one.
+
 ## [1.0.0]
 ### Added
 - Update `paxful_client` to 1.0
