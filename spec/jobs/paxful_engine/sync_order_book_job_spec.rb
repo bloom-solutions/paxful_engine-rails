@@ -1,10 +1,10 @@
 require "spec_helper"
 
 module PaxfulEngine
-  RSpec.describe SyncOrderBookJob, vcr: { record: :once } do
+  RSpec.describe SyncOrderBookJob do
 
-    it "runs EnqueueCreateTradeJob multiple times" do
-      expect(EnqueueCreateTradeJob).to receive(:perform_async).at_least(1).times
+    it "calls SyncOrderBook" do
+      expect(SyncOrderBook).to receive(:call)
       described_class.new.perform
     end
 
