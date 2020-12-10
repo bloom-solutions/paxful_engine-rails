@@ -7,6 +7,9 @@ module PaxfulEngine
     def self.call(page: DEFAULT_PAGE, max_page: nil)
       response = client.get_completed_trades(page: page)
       return unless response.success?
+      return if response.parsed_body.nil?
+      return if response.parsed_body["data"].nil?
+      return if response.parsed_body["data"]["trades"].nil?
 
       trades = response.parsed_body["data"]["trades"]
       return if trades.empty?
