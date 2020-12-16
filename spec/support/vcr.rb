@@ -5,8 +5,8 @@ VCR.configure do |config|
   config.ignore_localhost = true
 
   FILTERED_VARIABLES = %w[
-    PAXFUL_KEY
-    PAXFUL_SECRET
+    PAXFUL_ACCESS_KEY
+    PAXFUL_ACCESS_SECRET
   ].freeze
 
   FILTERED_VARIABLES.each do |var|
