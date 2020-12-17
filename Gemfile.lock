@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    paxful_engine-rails (1.1.0)
+    paxful_engine-rails (1.1.1)
       gem_config (~> 0.3.0)
-      paxful_client (~> 1.1)
+      paxful_client (~> 1.2)
       rails (~> 5.2)
       sidekiq
 
@@ -81,7 +81,7 @@ GEM
     dry-container (0.7.2)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.1, >= 0.1.3)
-    dry-core (0.4.10)
+    dry-core (0.5.0)
       concurrent-ruby (~> 1.0)
     dry-equalizer (0.3.0)
     dry-inflector (0.2.0)
@@ -135,7 +135,7 @@ GEM
     nio4r (2.5.4)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
-    paxful_client (1.1.0)
+    paxful_client (1.2.0)
       activesupport
       api_client_base
       dry-validation (~> 0.13)

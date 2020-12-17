@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   spec.add_dependency "gem_config", "~> 0.3.0"
-  spec.add_dependency "paxful_client", "~> 1.1"
+  spec.add_dependency "paxful_client", "~> 1.2"
   spec.add_dependency "rails", "~> 5.2"
   spec.add_dependency "sidekiq"
 
